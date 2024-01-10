@@ -8,12 +8,12 @@ import {
     FaInstagram,
 
 } from "react-icons/fa";
-import "./SingleProduct.scss";
 import prod from "../../assets/products/earbuds-prod-1.webp";
+import "./SingleProduct.scss";
 const SingleProduct = () => {
     return <div className="single-product-main-content">
         <div className="layout">
-            <div className="sonle-product-page">
+            <div className="single-product-page">
                 <div className="left">
                     <img src={prod} alt="" />
                 </div>
@@ -23,7 +23,7 @@ const SingleProduct = () => {
                     <span className="price">Price</span>
                     <span className="desc">Product description</span> 
 
-                    <div className="cart-button">
+                    <div className="cart-buttons">
                         <div className="quantity-buttons">
                             <span>-</span>
                             <span>5</span>
@@ -35,20 +35,21 @@ const SingleProduct = () => {
                         </button>
                     </div> 
                     <span className="divider" />
-                    <div className="info-icon">
+
+                    <div className="info-item">
                         <span className="text-bold">
                             Category:
-                         <span>Headphone</span> 
+                            <span>Headphone</span> 
                         </span>
                         <span className="text-bold">
                             Share:
-                        <span className="social-icons">
-                            <FaFacebookF size={16}/>
-                            <FaTwitter size={16}/>
-                            <FaInstagram  size={16}/>
-                            <FaLinkedinIn  size={16}/>
-                            <FaPinterest size={16}/>
-                        </span> 
+                            <span className="social-icons">
+                                <FaFacebookF size={16}/>
+                                <FaTwitter size={16}/>
+                                <FaInstagram  size={16}/>
+                                <FaLinkedinIn  size={16}/>
+                                <FaPinterest size={16}/>
+                            </span> 
                         </span>     
                     </div>  
                 </div> 
